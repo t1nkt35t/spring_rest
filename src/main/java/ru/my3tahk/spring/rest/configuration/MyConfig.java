@@ -23,7 +23,7 @@ public class MyConfig {
         ComboPooledDataSource dataSource = new ComboPooledDataSource();
         try {
             dataSource.setDriverClass("com.mysql.cj.jdbc.Driver");
-            dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/my_db?allowPublicKeyRetrieval=true&amp;useSSL=false&amp;serverTimezone=UTC");
+            dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/my_db?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC");
             dataSource.setUser("root");
             dataSource.setPassword("springcourse");
         } catch (PropertyVetoException e) {
